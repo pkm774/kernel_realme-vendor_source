@@ -26,7 +26,6 @@ struct sony_dfct_tbl_t {
 #define CALIB_DATA_LENGTH         1689
 #define WRITE_DATA_MAX_LENGTH     16
 #define WRITE_DATA_DELAY          3
-#define EEPROM_NAME_LENGTH        64
 
 struct cam_write_eeprom_t {
     unsigned int    cam_id;
@@ -35,7 +34,6 @@ struct cam_write_eeprom_t {
     unsigned int    isWRP;
     unsigned int    WRPaddr;
     unsigned char calibData[CALIB_DATA_LENGTH];
-    char eepromName[EEPROM_NAME_LENGTH];
 } __attribute__ ((packed));
 
 #define EEPROM_CHECK_DATA_MAX_SIZE 196

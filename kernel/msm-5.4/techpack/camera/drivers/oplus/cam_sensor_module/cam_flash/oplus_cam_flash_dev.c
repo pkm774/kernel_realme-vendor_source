@@ -130,7 +130,7 @@ static int flash_proc_init(struct cam_flash_ctrl *flash_ctl)
 		}
 	}
 	if (flash_ctl->soc_info.index > 0) {
-		sprintf(strtmp, "%u", flash_ctl->soc_info.index);
+		sprintf(strtmp, "%d", flash_ctl->soc_info.index);
 		strcat(proc_flash, strtmp);
 	}
 	proc_entry = proc_create_data(proc_flash, 0666, NULL,&led_fops, NULL);
